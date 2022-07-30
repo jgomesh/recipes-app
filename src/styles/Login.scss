@@ -1,0 +1,67 @@
+@import './global_variables.scss';
+
+.login__page {
+  background-color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  &__forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 350px;
+  }
+
+  &__forms__email, &__forms__password {
+    border: 1px solid black;
+    margin-bottom: 15px;
+    padding: 5px;
+    width: 250px;
+  }
+
+  &__forms__password {
+    margin-bottom: 60px;
+  }
+
+  &__forms__button {
+    @include button-dark-small;
+  }
+
+  &__forms__button:hover {
+    top: -2px;
+    background-color: black;
+    cursor: pointer;
+  }
+  &__forms__button:disabled {
+    top: -2px;
+    opacity: 50%;
+  }
+}
+
+@media screen and (min-width:1100px) {
+  .login__page {
+    &__logo {
+      width: 500px;
+    }
+    &__forms__email, &__forms__password {
+      margin-bottom: 30px;
+      width: 400px;
+    }
+  
+    &__forms__password {
+      margin-bottom: 80px;
+    }
+  
+    &__forms__button {
+      @include button-dark-big;
+    }
+  }
+}
