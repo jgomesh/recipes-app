@@ -18,7 +18,7 @@ import FavoriteRecipes from './pages/FavoriteRecipes';
 import RecipeDetails from './pages/RecipeDetails';
 import RecipeInProgress from './pages/RecipeInProgress';
 import DrinkDetails from './pages/DrinkDetails';
-
+// GO
 function App() {
   return (
     <Switch>
