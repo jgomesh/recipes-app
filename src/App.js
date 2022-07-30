@@ -22,7 +22,7 @@ import DrinkDetails from './pages/DrinkDetails';
 function App() {
   return (
     <Switch>
-      <Route exact path="/" component={ Login } />
+      <Route exact path="/recipe-app" component={ Login } />
       <Route exact path="/foods" component={ Recipes } />
       <Route
         path="/foods/:id/in-progress"
