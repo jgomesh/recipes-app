@@ -25,7 +25,7 @@ function Profile({ history }) {
     if (localStorage.getItem('inProgressRecipes')) {
       localStorage.removeItem('inProgressRecipes');
     }
-    history.push('/');
+    history.push('/recipes-app');
   };
   return (
     <main>
